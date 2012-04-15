@@ -7,5 +7,4 @@ version           "0.0.1"
 
 recipe "vips",    "Installs vips"
 
-# librarian adds unwanted cookbooks when enabling this
 supports "ubuntu"
