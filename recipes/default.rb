@@ -12,14 +12,14 @@ unless ::File.exists?("/usr/local/lib/libvips.so")
   bash "install vips" do
     cwd "/tmp"
     code <<-EOT
-    wget http://www.vips.ecs.soton.ac.uk/supported/7.26/vips-7.26.8.tar.gz 
-    tar zxf vips-7.26.8.tar.gz
+    wget http://www.vips.ecs.soton.ac.uk/supported/7.40/vips-7.40.11.tar.gz 
+    tar zxf vips-7.40.11.tar.gz
     cd vips-7.26.8
     ./configure
     make
     make install
     ldconfig
-    rm -rf vips-7.26.8*
+    rm -rf vips-7.40.11*
     EOT
   end
 
