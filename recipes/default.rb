@@ -8,6 +8,10 @@ unless ::File.exists?("/usr/local/lib/libvips.so")
   }
   packages.each { |pkg| package pkg }
 
+  vips_major_version = '7'
+  vips_version = '7.40.11'
+  
+
   # install vips from source
   bash "install vips" do
     cwd "/tmp"
