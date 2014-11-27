@@ -24,6 +24,7 @@ unless ::File.exists?("/usr/local/lib/libvips.so")
     make
     make install
     ldconfig
+    cd ..
     rm -rf vips-#{vips_version}*
     EOT
   end
