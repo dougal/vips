@@ -11,7 +11,7 @@ unless ::File.exists?("/usr/local/lib/libvips.so")
   vips_major_version = '7'
   vips_minor_version = '40'
   vips_patch_version = '11'
-  vips_version = '#{vips_major_version}.#{vips_minor_version}.#{vips_patch_version}'
+  vips_version = "#{vips_major_version}.#{vips_minor_version}.#{vips_patch_version}"
   
   # install vips from source
   bash "install vips" do
